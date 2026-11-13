@@ -58,8 +58,8 @@ Built with OpenTofu + Packer, deployed with Argo CD, watched by Grafana, broken 
 ## 📊 By the numbers
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=zollo&show_icons=true&theme=github_dark&hide_border=true&count_private=true" alt="GitHub stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zollo&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Top languages"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=zollo&theme=github_dark" alt="GitHub contributions summary" width="100%"/>
+  <img src="https://streak-stats.demolab.com?user=zollo&theme=github-dark-blue&hide_border=true" alt="GitHub streak"/>
 </p>
 
 ## 🤓 Fun facts
