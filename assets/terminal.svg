@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="400" viewBox="0 0 820 400" role="img" aria-label="Terminal: whoami → Joe Zollo, DevOps engineer in Atlanta; kubectl get pods shows coffee Running with 47 restarts, homelab Running, side-projects Pending, sleep in CrashLoopBackOff">
+  <style>
+    .t { font: 15px 'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Liberation Mono',monospace; fill: #c9d1d9; white-space: pre; }
+    .p { fill: #7ee787; } .c { fill: #79c0ff; } .d { fill: #8b949e; }
+    .ok { fill: #3fb950; } .warn { fill: #d29922; } .bad { fill: #f85149; } .h { fill: #d2a8ff; font-weight: bold; }
+    .o { opacity: 0; animation: show .01s forwards; }
+    @keyframes show { to { opacity: 1; } }
+    .cur { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+  <defs>
+    <!-- typing reveal for each command line -->
+    <clipPath id="c1"><rect x="40" y="60" height="24" width="0"><animate attributeName="width" from="0" to="120" begin="0.4s" dur="0.6s" fill="freeze" calcMode="discrete" values="0;16;32;48;64;80;96;120"/></rect></clipPath>
+    <clipPath id="c2"><rect x="40" y="128" height="24" width="0"><animate attributeName="width" begin="1.9s" dur="1.1s" fill="freeze" calcMode="discrete" values="0;27;54;81;108;135;162;189;216;243;270;300"/></rect></clipPath>
+    <clipPath id="c3"><rect x="40" y="290" height="24" width="0"><animate attributeName="width" begin="4.6s" dur="0.5s" fill="freeze" calcMode="discrete" values="0;18;36;54;72;100"/></rect></clipPath>
+  </defs>
+
+  <rect width="820" height="400" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <rect width="820" height="36" rx="12" fill="#161b22"/>
+  <rect y="24" width="820" height="12" fill="#161b22"/>
+  <circle cx="22" cy="18" r="6" fill="#ff5f56"/><circle cx="42" cy="18" r="6" fill="#ffbd2e"/><circle cx="62" cy="18" r="6" fill="#27c93f"/>
+  <text x="410" y="23" text-anchor="middle" class="t d" style="font-size:13px">joe@zollo: ~</text>
+
+  <!-- whoami -->
+  <text x="20" y="77" class="t p">$</text>
+  <text x="40" y="77" class="t c" clip-path="url(#c1)">whoami</text>
+  <text x="20" y="103" class="t o" style="animation-delay:1.2s"><tspan class="h">Joe Zollo</tspan> · DevOps / platform engineer · Atlanta, GA 🍑</text>
+
+  <!-- kubectl -->
+  <text x="20" y="145" class="t p o" style="animation-delay:1.6s">$</text>
+  <text x="40" y="145" class="t c" clip-path="url(#c2)">kubectl get pods -n joe</text>
+  <g class="o" style="animation-delay:3.3s">
+    <text x="20" y="171" class="t d">NAME            READY   STATUS              RESTARTS</text>
+  </g>
+  <text x="20" y="195" class="t o" style="animation-delay:3.5s">coffee          1/1     <tspan class="ok">Running</tspan>             47 (2m ago)</text>
+  <text x="20" y="219" class="t o" style="animation-delay:3.7s">homelab         9/9     <tspan class="ok">Running</tspan>             0</text>
+  <text x="20" y="243" class="t o" style="animation-delay:3.9s">side-projects   3/26    <tspan class="warn">Pending</tspan>             0</text>
+  <text x="20" y="267" class="t o" style="animation-delay:4.1s">sleep           0/1     <tspan class="bad">CrashLoopBackOff</tspan>    ∞</text>
+
+  <!-- uptime -->
+  <text x="20" y="307" class="t p o" style="animation-delay:4.4s">$</text>
+  <text x="40" y="307" class="t c" clip-path="url(#c3)">uptime</text>
+  <text x="20" y="333" class="t o" style="animation-delay:5.3s"> on github since 2017, load average: 42 browser tabs</text>
+
+  <!-- prompt -->
+  <g class="o" style="animation-delay:5.7s">
+    <text x="20" y="373" class="t p">$</text>
+    <rect x="40" y="360" width="9" height="17" fill="#c9d1d9" class="cur"/>
+  </g>
+</svg>
